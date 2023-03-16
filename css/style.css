@@ -1,0 +1,57 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{
+    list-style: none;
+}
+.main_tiki{
+    width: 1440px;
+    margin: 0 auto;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+.logo_tiki{
+    width: 57px;
+    height: 40px;
+}
+.logo_tiki img {
+    width: 100%;
+    height: 100%;
+}
+.header_user .user {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    outline: none;
+    border: hidden;
+}
+.search button{
+    color: rgb(10, 104, 255);
+    background-color: #fff;
+    border: hidden;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    border: 1px solid rgb(221, 221, 227) ;
+    width: 840px;
+}
+.header_user {
+    display: flex;
+}
+.user{
+    margin-left: 48px;
+}
+.user img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
