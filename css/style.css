@@ -2,12 +2,15 @@
 li{
     list-style: none;
 }
-.main_tiki{
-    width: 1440px;
-    margin: 0 auto;
-
+a{
+    text-decoration: none;
 }
-.header {
+
+.header{
+    margin: 8px auto;
+    width: 1392px;
+}
+.header1,.header2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +19,7 @@ li{
 .logo_tiki{
     width: 57px;
     height: 40px;
+    margin-right: 48px;
 }
 .logo_tiki img {
     width: 100%;
@@ -29,6 +33,10 @@ li{
 .search input {
     outline: none;
     border: hidden;
+    padding: 0px 8px;
+    font-size: 14px;
+    width: 715px;
+    border-right: 1px solid rgb(235, 235, 235);
 }
 .search button{
     color: rgb(10, 104, 255);
@@ -43,15 +51,221 @@ li{
 .search{
     border: 1px solid rgb(221, 221, 227) ;
     width: 840px;
+    border-radius: 8px;
 }
 .header_user {
     display: flex;
-}
-.user{
     margin-left: 48px;
+}
+.user a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(128, 128, 137);
+    text-decoration: none;
 }
 .user img {
     width: 24px;
     height: 24px;
     margin-right: 4px;
+}
+.search_input {
+    margin: 7px 0px 7px 18px;
+}
+.search button{
+    width: 84px;
+    height: 38px;
+    padding: 4px;
+    outline: none;
+    border-radius: 0px 8px 8px 0px;
+    
+}
+.user div {
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.user div:hover{
+    background-color: rgba(39, 39, 42, 0.12);
+}
+.user .home:hover,.cart:hover{
+    background-color: rgba(0, 96, 255, 0.12);
+} 
+.icon_search{
+    color: rgb(128, 128, 137);
+}
+.search button:hover {
+    background-color: rgba(10, 104, 255, 0.2);
+}
+.cart{
+    margin-left: 24px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart::before{
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 310px;
+    border: 1px solid rgb(235, 235, 240);
+
+}
+.suggest {
+    margin-left: 105px;
+}
+.suggest a {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(128, 128, 137);
+    margin-right: 12px;
+}
+.add {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+.add img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+.add > h4 {
+    margin: 0px;
+    color: rgb(128, 128, 137);
+    font-weight: 400;
+    font-size: 14px;
+    padding-right: 4px;
+
+}
+.address {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(39, 39, 42);
+}
+.free-ship{
+    padding:8px 16px;
+    background-color:#FFE880;
+}
+.free-ship a {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.free {
+    width: 81px;
+    height: 12px;
+}
+.free-ship .icon {
+    width:7px;
+    height: 11px;
+}
+.free-ship strong,.free-ship span{
+    padding:0px 4px;
+}
+/* Home Page */
+.main-home {
+    background-color: #f5f5fa;
+}
+.home-page {
+    width:1440px;
+    margin: 0 auto; 
+    padding:0px 24px;
+    display: flex;
+    padding-top:16px;
+    justify-content: space-between;
+}
+.slide-bar {
+    display: flex;
+    flex-direction: column;
+    color: rgb(56, 56, 61);
+    font-size: 14px;
+    width: 230px;
+    height: auto;
+    border-radius: 4px;
+
+}
+.detail-slide-bar{
+    display: flex;
+    margin-bottom: 16px;
+    padding: 12px 8px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.main {
+    width: calc(100% - 254px);
+  
+}
+.slide-bar .title {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+.detail-slide-bar .item {
+    display: flex;
+    padding: 7px 16px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius:8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.item img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.item:hover{
+    background: rgba(39, 39, 42, 0.12);
+    text-decoration: none;
+    color: #333;
+}
+.item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+
+.section1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    column-gap: 16px;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    flex-basis: 75%;
+
+
+}
+.slider img{
+    width: 842px;
+   
+}
+.intro{
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+
+}
+.intro img {
+    width: 100%;
+    border-radius: 12px;
+
 }
